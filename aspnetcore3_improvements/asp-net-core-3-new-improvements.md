@@ -1,8 +1,31 @@
 # Asp.net core 3.0 New Improvements
 
-## Officials
+## Officials Documents
 
-## something new on the official blog only
+* Blazor
+* gRPC
+	ASP.NET Core 上的 gRPC 與標準 ASP.NET Core 功能整合，例如記錄、相依性插入（DI）、驗證和授權。
+* SignalR
+* New System.Text.Json
+  * System.Text.Json
+  * Known issues
+      Support for OpenAPI / Swagger when using System.Text.Json is ongoing and unlikely to be available as part of the 3.0 release.
+* IdentityServer4 supports web api and Spa
+* Generic Host
+* Default Enable HTTP/2
+  ```C#
+  var client = new HttpClient() 
+  {
+    BaseAddress = new Uri("https://localhost:5001"),
+    DefaultRequestVersion = new Version(2, 0)
+  };
+  ```
+* Endpoint Routes
+* Health Check
+* Background worker
+* Performance improvement
+
+## Something detail mentioned on the official blog.
 
 ### Distributed Tracing and Logging
 
@@ -25,24 +48,6 @@ These new members of the HttpRequest and HttpResponse classes respectively allow
 This is a new project template for long-running tasks such as Windows Services or Linux daemons.
 
 *todo: test it.*
-
-#### gRPC support
-
-#### The New Built-in JSON Engine
-
-* System.Text.Json
-* Known issues
-    Support for OpenAPI / Swagger when using System.Text.Json is ongoing and unlikely to be available as part of the 3.0 release.
-
-#### HTTP/2
-
-```C#
-var client = new HttpClient() 
-{
-  BaseAddress = new Uri("https://localhost:5001"),
-  DefaultRequestVersion = new Version(2, 0)
-};
-```
 
 #### Configuration
 
@@ -74,6 +79,8 @@ public DemoController(IOptions<GlobalAppSettings> options)
 ## Issues fixed
 
 ## References
+
+[blog announcing-net-core-3-0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)
 
 [troubleshooting-and-monitoring-distributed-apps](https://devblogs.microsoft.com/aspnet/improvements-in-net-core-3-0-for-troubleshooting-and-monitoring-distributed-apps/)
 
