@@ -42,10 +42,11 @@ not a standard.
   * These may be useful to have some data available for access throughout the trace.
 * Spans and Relationships
   * Spans
-  ![SpanTime](images\spans-time-view.png)
+  
+  ![SpanTime](images/spans-time-view.png)
 
   * Relationships
-  ![SpanRelationship](images\spans-relationship-view.png)
+  ![SpanRelationship](images/spans-relationship-view.png)
 
 ### OpenCensus
 
