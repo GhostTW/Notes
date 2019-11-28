@@ -1,10 +1,15 @@
-# Asp.net core 3.0 New Improvements
+# Core 3.0 New Improvements
 
-## Officials Documents
+# Core 3.0
 
-* Blazor
+* GC Large page support
+
+https://github.com/dotnet/docs/blob/master/docs/core/run-time-config/garbage-collector.md#large-pages
+
+## Asp.net Core 3.0 Officials Documents
+
 * gRPC
-	ASP.NET Core 上的 gRPC 與標準 ASP.NET Core 功能整合，例如記錄、相依性插入（DI）、驗證和授權。
+  ASP.NET Core 上的 gRPC 與標準 ASP.NET Core 功能整合，例如記錄、相依性插入（DI）、驗證和授權。
 * SignalR
 * New System.Text.Json
   * System.Text.Json
@@ -13,6 +18,7 @@
 * IdentityServer4 supports web api and Spa
 * Generic Host
 * Default Enable HTTP/2
+
   ```C#
   var client = new HttpClient() 
   {
@@ -20,12 +26,13 @@
     DefaultRequestVersion = new Version(2, 0)
   };
   ```
+
 * Endpoint Routes
 * Health Check
 * Background worker
 * Performance improvement
 
-## Something detail mentioned on the official blog.
+## Asp.net Core 3.0 Something detail mentioned on the official blog
 
 ### Distributed Tracing and Logging
 
@@ -76,11 +83,13 @@ public DemoController(IOptions<GlobalAppSettings> options)
 
 *todo: not read yet*
 
-## Issues fixed
+## Asp.net Core 3.0 Issues fixed
 
 ## References
 
 [blog announcing-net-core-3-0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)
+
+[large-page-support](https://docs.microsoft.com/zh-tw/windows/win32/memory/large-page-support)
 
 [troubleshooting-and-monitoring-distributed-apps](https://devblogs.microsoft.com/aspnet/improvements-in-net-core-3-0-for-troubleshooting-and-monitoring-distributed-apps/)
 
