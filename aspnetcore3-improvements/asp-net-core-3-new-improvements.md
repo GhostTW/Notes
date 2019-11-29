@@ -91,6 +91,8 @@ public DemoController(IOptions<GlobalAppSettings> options)
 
 [large-page-support](https://docs.microsoft.com/zh-tw/windows/win32/memory/large-page-support)
 
+[exploring-asp-net-core-3](https://andrewlock.net/series/exploring-asp-net-core-3/)
+
 [troubleshooting-and-monitoring-distributed-apps](https://devblogs.microsoft.com/aspnet/improvements-in-net-core-3-0-for-troubleshooting-and-monitoring-distributed-apps/)
 
 [exploring-dotnet-core-3-whats-new](https://auth0.com/blog/exploring-dotnet-core-3-whats-new/)
