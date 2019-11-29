@@ -50,11 +50,11 @@ These new members of the HttpRequest and HttpResponse classes respectively allow
 
 *todo: test it.*
 
-#### Worker Service template
+#### Worker Service
 
-This is a new project template for long-running tasks such as Windows Services or Linux daemons.
+Core 2.2 是用 WebHost 並自行寫邏輯判斷是否在 windows service 再由 windows service 觸發
 
-*todo: test it.*
+Core 3.0 https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-3.0&tabs=visual-studio
 
 #### Configuration
 
